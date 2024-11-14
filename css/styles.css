@@ -261,6 +261,25 @@ address {
     margin-bottom: 80px;
 }
 
+.carusel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+    fill: var(--color-primary-dark);
+}
+
+.carusel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
 .formats-list {
     display: flex;
     flex-wrap: wrap;
@@ -318,6 +337,14 @@ address {
 
 .address-link:hover {
     color: var(--color-brand-normal);
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
 }
 
 .address-copyright {
