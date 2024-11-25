@@ -326,6 +326,10 @@ address {
     fill: var(--color-primary-light);
 }
 
+.carusel-button.next {
+    transform: rotate(180deg);
+}
+
 .formats-list {
     display: flex;
     flex-wrap: wrap;
@@ -346,6 +350,11 @@ address {
         rgba(49, 38, 26, 0.71) 72.92%,
         var(--color-primary-dark) 100%
     );
+    transition: transform 0.3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
 }
 
 .format-title {
