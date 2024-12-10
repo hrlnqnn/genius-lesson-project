@@ -7,6 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="./css/styles.css" />
+        <!--Owl carousel min.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--owl.theme.default.min.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
     <body>
         <header class="header-section">
@@ -75,26 +81,26 @@
                     <div class="traditions-container">
                         <div class="traditions-content">
                             <h2 class="traditions-title section-title">
-                                Новий формат традицій
+                                Новий формат<br>традицій
                             </h2>
                             <p class="traditions-text">
                                 <span class="brand uppercase" lang="en"
                                     >shop bakery</span
                                 >
                                 — це пекарня, яка взяла все найкраще, і зберегла
-                                смак традиційної випічки та натуральність
+                                смак<br>традиційної випічки та натуральність
                                 інгредієнтів.
                             </p>
                             <p class="traditions-text limited">
-                                Ми працюємо як найвідоміші мережі—
+                                Ми працюємо як найвідоміші мережі—<br>
                                 <span class="brand"
                                     >5 хвилин і замовлення готове.
-                                </span>
-                                А ще у наших пекарень стильний дизайн та висока
+                                </span><br>
+                                А ще у наших пекарень стильний дизайн<br> та висока
                                 якість обслуговування!
                             </p>
                         </div>
-                        <img
+                        <img class="traditions-image"
                             src="./images/baker-man.jpg"
                             alt="Чоловік пекар дивиться на щойно спечений хліб з посмішкою"
                         />
@@ -165,68 +171,215 @@
                         Формати
                     </h2>
                     <div class="formats-container">
-                        <button class="carusel-button" type="button">
+                        <button class="carusel-button prev" type="button">
                             <svg width="16" height="16">
                                 <use href="./images/icons.svg#icon-Arrow"></use>
                             </svg>
                         </button>
-                        <ul class="formats-list">
-                            <li class="formats-item">
-                                <article class="format-card">
-                                    <h3 class="format-title" lang="en">
-                                        Walrus
-                                    </h3>
-                                    <div class="format-text">
-                                        <p>Площа: до 120 м2</p>
-                                        <p>Меню: розширене меню</p>
-                                        <p>
-                                            Штат: 2 продавці-касири, 2 пекарі, 2
-                                            помічники пекаря, 2
-                                            офіціанти-різнороби
-                                        </p>
-                                        <p>Посадкові місця: є</p>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="formats-item">
-                                <article class="format-card">
-                                    <h3 class="format-title" lang="en">
-                                        Horseshoe
-                                    </h3>
-                                    <div class="format-text">
-                                        <p>Площа: до 25 м2</p>
-                                        <p>Меню: найпопулярніші позиції меню</p>
-                                        <p>
-                                            Штат: 2 продавці-касири, 2 пекарі, 1
-                                            помічник пекаря
-                                        </p>
-                                        <p>Посадкові місця: відсутні</p>
-                                    </div>
-                                </article>
-                            </li>
-                            <li class="formats-item">
-                                <article class="format-card">
-                                    <h3 class="format-title" lang="en">
-                                        Handlebar
-                                    </h3>
-                                    <div class="format-text">
-                                        <p>Площа: до 15 м2</p>
-                                        <p>Меню: найпопулярніші позиції меню</p>
-                                        <p>
-                                            Штат: 1 продавець, 1 пекар, 1
-                                            помічник пекаря
-                                        </p>
-                                        <p>Посадкові місця: відсутні</p>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
+                            <ul class="formats-list owl-carousel owl-theme">
+                                <li class="formats-item walrus">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Walrus
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 120 м<sup>2</sup></p>
+                                            <p>Меню: розширене меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 2
+                                                помічники пекаря, 2
+                                                офіціанти-різнороби
+                                            </p>
+                                            <p>Посадкові місця: є</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item horseshoe">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Horseshoe
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 25 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item handlebar">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Handlebar
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 15 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 1 продавець, 1 пекар, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item walrus">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Walrus
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 120 м<sup>2</sup></p>
+                                            <p>Меню: розширене меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 2
+                                                помічники пекаря, 2
+                                                офіціанти-різнороби
+                                            </p>
+                                            <p>Посадкові місця: є</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item horseshoe">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Horseshoe
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 25 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item handlebar">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Handlebar
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 15 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 1 продавець, 1 пекар, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item walrus">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Walrus
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 120 м<sup>2</sup></p>
+                                            <p>Меню: розширене меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 2
+                                                помічники пекаря, 2
+                                                офіціанти-різнороби
+                                            </p>
+                                            <p>Посадкові місця: є</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item horseshoe">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Horseshoe
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 25 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item handlebar">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Handlebar
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 15 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 1 продавець, 1 пекар, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item walrus">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Walrus
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 120 м<sup>2</sup></p>
+                                            <p>Меню: розширене меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 2
+                                                помічники пекаря, 2
+                                                офіціанти-різнороби
+                                            </p>
+                                            <p>Посадкові місця: є</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item horseshoe">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Horseshoe
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 25 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 2 продавці-касири, 2 пекарі, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="formats-item handlebar">
+                                    <article class="format-card">
+                                        <h3 class="format-title" lang="en">
+                                            Handlebar
+                                        </h3>
+                                        <div class="format-text">
+                                            <p>Площа: до 15 м<sup>2</sup></p>
+                                            <p>Меню: найпопулярніші позиції меню</p>
+                                            <p>
+                                                Штат: 1 продавець, 1 пекар, 1
+                                                помічник пекаря
+                                            </p>
+                                            <p>Посадкові місця: відсутні</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
                         <button class="carusel-button next" type="button">
                             <svg width="16" height="16">
                                 <use href="./images/icons.svg#icon-Arrow"></use>
                             </svg>
                         </button>
-                    </div>
+                    </div>       
                 </div>
             </section>
             <section class="section contact-section" id="contact-section">
@@ -347,11 +500,14 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop">
+        <div class="backdrop is-hidden">
             <div class="modal">
                 <button type="button" class="modal-btn-close">close</button>
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>
